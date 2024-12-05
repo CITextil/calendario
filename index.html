@@ -5,14 +5,14 @@
       <title>Imagenes Gestor</title>
       <meta http-equiv="content-type" content="text/html; charset=utf-8">
       <meta name="generator" content="PSPad editor, www.pspad.com">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title></title>
 
       <style>
-
             body {
                   display: block;
-                  width: 95vw;
-                  height: 95vh;
+                  width: 100vw;
+                  height: 100vh;
                   background-color: rgb(236, 236, 236);
                   background-size: 100% 100%;
                   background-repeat: no-repeat;
@@ -51,10 +51,10 @@
             }
 
             .carpeta {
-                  max-width: 700px;
-                  max-height: 800px;
-                  min-width: 450px;
-                  margin: 2%;
+                  max-width: 40rem;
+                  max-height: auto;
+                  min-width: 15rem;
+                  margin: 1%;
                   border-radius: 5px;
                   transition: 0.2s;
             }
@@ -63,30 +63,85 @@
                   filter: opacity(85%);
             }
 
-            .carpeta img {
+            .carpeta .portada {
                   width: 100%;
             }
-            .carpeta p{
+
+            .carpeta p {
                   font-size: 1.4rem;
                   text-align: center;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+            }
+
+            .icono{
+                  width: 30px;
+                  height: 30px;
+                  margin: 0 10px;
+                  
+            }
+
+            @media screen and (max-width:1600px) {
+                  .carpeta {
+                  max-width: 30rem;
+            }
+
+            }
+
+            @media screen and (max-width:1220px) {
+                  .title {
+                        margin-top: 10%;
+                        margin-bottom: 5%;
+                  }
+
+            }
+
+            @media screen and (max-width: 720px) {
+                  .title {
+                        margin-top: 15%;
+                        margin-bottom: 5%;
+                  }
+
+                  .carpeta p {
+                        font-weight: 600;
+                  }
+
+                  @media screen and (max-width: 520px) {
+                        .title {
+                              margin-top: 20%;
+                              margin-bottom: 5%;
+                        }
+                        .logo-ci{
+                              width: 50%;
+                        }
+
+                        .carpeta p {
+                              font-weight: 600;
+                        }
+                  }
             }
       </style>
 </head>
 
 <body>
       <div class="title">
-            <a href="https://www.citextil.com/" class="logo-ci" target="_blank"><img src="img/CI-TEXTIL-LOGO-NEGRO.png" alt=""></a>
+            <a href="https://www.citextil.com/" class="logo-ci" target="_blank"><img src="img/CI-TEXTIL-LOGO-NEGRO.png"
+                        alt=""></a>
       </div>
 
 
       <div class="box">
 
-            <div class="carpeta"><a href="https://online.fliphtml5.com/dxetk/ecct/#p=1" target="_blank"><img  style="width: 104%; height: 104%;"
-                              src="img/BOTON-CALENDARIO.png" alt=""></a><p>CALENDARIO DIGITAL</p>
-                        </div>
+            <div class="carpeta"><a href="https://online.fliphtml5.com/dxetk/ecct/#p=1" target="_blank"><img class="portada"
+                              style="width: 104%; height: 104%;" src="img/BOTON-CALENDARIO.png" alt=""></a>
+                  <p>CALENDARIO DIGITAL <a  href="img/CALENDARIO 2025.pdf" download="img/CALENDARIO 2025.pdf"><img class="icono" src="img/ICONO-DESCARGA.png" alt=""></a></p>
+            </div>
 
-            <div class="carpeta"><a href="https://citextil.com/ANIVERSARIO25/ANIVERSARIO25.mp4" target="_blank"><img
-                              src="img/BOTON-VIDEO.png" alt=""></a><p>VIDEO ANIVERSARIO 25 AÑOS</p></div>
+            <div class="carpeta"><a href="https://citextil.com/ANIVERSARIO25/ANIVERSARIO25.mp4" target="_blank"><img class="portada"
+                              src="img/BOTON-VIDEO.png" alt=""></a>
+                  <p>VIDEO ANIVERSARIO 25 AÑOS</p>
+            </div>
 
       </div>
 
