@@ -46,7 +46,7 @@
                   width: 100vw;
                   display: flex;
                   flex-wrap: wrap;
-                  align-items: center;
+                  align-items: start;
                   justify-content: center;
             }
 
@@ -59,12 +59,18 @@
                   transition: 0.2s;
             }
 
-            .carpeta:hover {
-                  filter: opacity(85%);
+            .carpeta .portada:hover {
+                  transform: scale(1.03);
             }
 
             .carpeta .portada {
+                  transition: 0.3s;
                   width: 100%;
+            }
+
+            .icono{
+                  transition: 0.3s;
+                  border-radius: 5px;
             }
 
             .carpeta p {
@@ -75,12 +81,6 @@
                   align-items: center;
             }
 
-            .icono {
-                  width: 30px;
-                  height: 30px;
-                  margin: 0 10px;
-
-            }
 
             @media screen and (max-width:1600px) {
                   .carpeta {
@@ -94,10 +94,13 @@
                         margin-top: 10%;
                         margin-bottom: 5%;
                   }
+                  .carpeta {
+                        max-width: 25rem;
+                  }
 
             }
 
-            @media screen and (max-width: 720px) {
+            @media screen and (max-width: 930px) {
                   .title {
                         margin-top: 15%;
                         margin-bottom: 5%;
@@ -107,11 +110,38 @@
                         font-weight: 600;
                   }
 
+                  .carpeta {
+                        max-width: 20rem;
+                  }
+
+                  .icono{
+                        max-width: 10rem;
+                  }
+
+            }
+
+            @media screen and (max-device-width: 930px) {
+                  .title {
+                        margin-top: 15%;
+                        margin-bottom: 5%;
+                  }
+
+                  .carpeta p {
+                        font-weight: 600;
+                  }
+
+                  .carpeta {
+                        max-width: 20rem;
+                  }
+
+                  .icono{
+                        max-width: 15rem;
+                  }
             
 
             }
 
-            @media screen and (max-width: 520px) {
+            @media screen and (max-width: 730px) {
                   .title {
                         margin-top: 20%;
                         margin-bottom: 5%;
@@ -126,7 +156,34 @@
                   }
 
                   .carpeta {
-                        max-width: 25rem;
+                        max-width: 20rem;
+                  }
+
+                  .icono{
+                        max-width: 20rem;
+                  }
+            }
+
+            @media screen and (max-device-width: 730px) {
+                  .title {
+                        margin-top: 20%;
+                        margin-bottom: 5%;
+                  }
+
+                  .logo-ci {
+                        width: 50%;
+                  }
+
+                  .carpeta p {
+                        font-weight: 600;
+                  }
+
+                  .carpeta {
+                        max-width: 20rem;
+                  }
+
+                  .icono{
+                        max-width: 20rem;
                   }
             }
             
@@ -143,15 +200,15 @@
       <div class="box">
 
             <div class="carpeta"><a href="https://online.fliphtml5.com/dxetk/ecct/#p=1" target="_blank"><img
-                              class="portada" style="width: 104%; height: 104%;" src="img/BOTON-CALENDARIO.png"
+                              class="portada" src="img/CALENDARIO-INTERACTIVO.jpg"
                               alt=""></a>
-                  <p>CALENDARIO DIGITAL <a href="img/CALENDARIO 2025.pdf" download="CALENDARIO 2025.pdf"><img
-                                    class="icono" src="img/ICONO-DESCARGA.png" alt=""></a></p>
+                  <p><a href="img/CALENDARIO 2025.pdf" download="CALENDARIO 2025.pdf"><img
+                                    class="icono" src="img/DESCARGAR-PDF.jpg" alt=""></a></p>
             </div>
 
             <div class="carpeta"><a href="https://citextil.com/ANIVERSARIO25/ANIVERSARIO25.mp4" target="_blank"><img
-                              class="portada" src="img/BOTON-VIDEO.png" alt=""></a>
-                  <p>VIDEO ANIVERSARIO 25 AÑOS</p>
+                              class="portada" src="img/BOTON-VIDEO.Jpg" alt=""></a>
+                  <p><img class="icono" src="img/VIDEO-25-AÑOS.jpg" alt=""></p>
             </div>
 
       </div>
